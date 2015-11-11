@@ -4,12 +4,12 @@ Path.base = __dirname + '/../..';
 
 //---------------
 
-Path.frontend.base = Path.base + '/frontend';
-Path.source        = Path.frontend.base + '/source';
+Path.frontend.base  = Path.base + '/frontend';
+Path.source         = Path.frontend.base + '/source';
 
-Path.frontend.html = Path.source + '/html';
-Path.frontend.css  = Path.source + '/css';
-
+Path.frontend.html  = Path.source + '/html';
+Path.frontend.css   = Path.source + '/css';
+Path.frontend.fonts = Path.source + '/fonts';
 //---------------
 
 Path.dest.serverFiles  = Path.base + '/public';
