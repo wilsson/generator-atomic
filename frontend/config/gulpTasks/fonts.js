@@ -8,7 +8,7 @@ module.exports = function Task(gulp,path,plugins,config){
     }
   }); 
     
-  gulp.task('fonts:compile',function(){
+  gulp.task('fonts',function(){
     console.log(dirList,'distList');
     console.log(path.frontend.fonts+'/_template/fonts.css');
     console.log(path.frontend.css+'/layout');
