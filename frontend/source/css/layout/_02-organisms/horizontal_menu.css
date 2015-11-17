@@ -3,6 +3,8 @@
   width: 100%;
   clear:fix;
   height: 75px;
+  font-family:$family2;
+  font-size:14px;
 } 
 .o-menu nav{
   lost-center: 980px;
@@ -13,19 +15,41 @@
 }
 .o-menu_itemLogo{
   float: left;
-  margin-top: 10px;
+  margin-top: 12px;
 }
 .o-menu_item{
   float: left;
   list-style: none;
 }
 .o-menu_itemTarget{
+  transition:all .2s ease-in; 
   color:white;
   text-decoration: none;
-  padding: 0 10px;
+  padding: 0 20px;
   display: block;
   line-height: 75px
 }
 .o-menu_itemTarget:hover{
   color: #4d5f1a;
+}
+.o-menu_itemActions{
+  float:left;
+  list-style:none;
+}
+.o-menu_itemActions + .o-menu_itemActions{
+  margin:0 2px;
+}
+.o-menu_itemActionsTarget{
+  color:white;
+  text-decoration:none;
+  padding:0 10px;
+  line-height:30px;
+  border-radius:6px;
+  display:block;
+}
+.o-menu_itemActionsTarget.register{
+  background-color:#ed6318;
+}
+.o-menu_itemActionsTarget.login{
+  background-color:#5d7612;
 }

@@ -30,3 +30,4 @@ runTask('demo');
 */
 
 gulp.task('server',['express','bs','watch']);
+gulp.task('default',['fonts','css','copy']);

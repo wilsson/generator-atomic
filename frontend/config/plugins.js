@@ -8,5 +8,6 @@ module.exports =  plugins = {
   glob        : require('gulp-css-globbing'),
   express     : require('express'),
   bs          : require('browser-sync').create(),
+    del         : require('del'),
   processor   : processor
 }

@@ -15,5 +15,6 @@ Path.frontend.fonts = Path.source + '/fonts';
 Path.dest.serverFiles  = Path.base + '/public';
 Path.dest.css          = Path.dest.serverFiles + '/css';
 Path.dest.html         = Path.dest.serverFiles + '/html';
+Path.dest.fonts        = Path.dest.serverFiles + '/fonts'
 
 module.exports = Path; 
