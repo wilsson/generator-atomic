@@ -1,0 +1,40 @@
+.o-fatFooter{
+  background-color:#6e8529;  
+  width:100%;
+  padding:14px 0;
+}
+.o-fatFooterInfo, 
+.o-fatFooterList{
+  float:left;
+}
+.o-fatFooterInfo{
+  width:9%;
+  font-size:10.5px;
+  color:#fff;
+}
+.o-fatFooterList{
+  width:91%;
+  margin:0;
+  padding:0;
+  font-size:10.5px;
+  text-align:center;
+}
+.o-fatFooterList li{
+  display:inline-block;
+  padding: 0 1.5px;
+  margin-bottom: 6px;
+}
+
+.o-fatFooterSeparator:after{
+  content:"|";
+  color:#fff;
+  margin-right: 4px;
+  margin-left: 4px;
+}
+.o-fatFooterList li:hover{
+  text-decoration:underline;
+}
+.o-fatFooterList li a{
+  color:#fff;
+  text-decoration:none;
+}

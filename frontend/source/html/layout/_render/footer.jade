@@ -1,2 +1,10 @@
-footer.u-wrapper_page
-  h1.a-index_titlePrimary &#169; 2015.
+footer.o-fatFooter
+  .u-wrapper_page
+    span.o-fatFooterInfo visite también:
+    ul.o-fatFooterList
+      - for(var i=0;i<menu.length;i++){
+        li: a(href="")=menu[i] 
+        - if(i!=11){
+          i.o-fatFooterSeparator
+        - }
+      - }
