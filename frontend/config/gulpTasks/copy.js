@@ -10,5 +10,9 @@ module.exports = function Task(gulp,path,plugins,config){
           .pipe(gulp.dest(path.dest.fonts)); 
   });
 
-    gulp.task('copy',['copy:css']);
+    gulp.task('copy:img:sprites',function(){
+		return gulp.src(path.frontend.images)
+        	.pipe();
+    });
+   gulp.task('copy',['copy:css','copy:img:sprites']);
 };

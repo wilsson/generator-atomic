@@ -9,5 +9,6 @@ module.exports =  plugins = {
   express     : require('express'),
   bs          : require('browser-sync').create(),
     del         : require('del'),
+    spritesmith : require('gulp.spritesmith'),
   processor   : processor
 }
