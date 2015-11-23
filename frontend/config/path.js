@@ -10,7 +10,7 @@ Path.source         = Path.frontend.base + '/source';
 Path.frontend.html  = Path.source + '/html';
 Path.frontend.css   = Path.source + '/css';
 Path.frontend.fonts = Path.source + '/fonts';
-Path.frontend.images = Path.source;
+Path.frontend.images = Path.source + '/images';
 //---------------
 
 Path.dest.serverFiles  = Path.base + '/public';

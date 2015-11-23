@@ -60,7 +60,7 @@ The provided mixins are intended to be used with the array-like variables
 {{#block "sprite-functions"}}
 {{#if options.functions}}
 @mixin sprite-width($sprite) {
-  width: nth($sprite, 5);
+  width: $sprite(5);
 }
 
 @mixin sprite-height($sprite) {
@@ -101,8 +101,8 @@ The `sprites` mixin generates identical output to the CSS template
 {{#if options.functions}}
 @mixin sprites($sprites) {
   @each $sprite in $sprites {
-    $sprite-name: nth($sprite, 10);
-    .#{$sprite-name} {
+    $sprite-name: $sprite[10];
+    .$(sprite-name) {
       @include sprite($sprite);
     }
   }

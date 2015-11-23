@@ -11,8 +11,8 @@ module.exports = function Task(gulp,path,plugins,config){
   });
 
     gulp.task('copy:img:sprites',function(){
-		return gulp.src(path.frontend.images)
-        	.pipe();
+		return gulp.src(path.frontend.images +  '/*_sprite.png')
+        	.pipe(gulp.dest(path.dest.serverFiles));
     });
    gulp.task('copy',['copy:css','copy:img:sprites']);
 };
