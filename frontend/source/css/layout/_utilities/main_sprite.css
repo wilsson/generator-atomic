@@ -11,88 +11,33 @@ $icon-home: x y offset_x offset_y width height total_width total_height image_pa
 At the bottom of this section, we provide information about the spritesheet itself
 $spritesheet: width height image $spritesheet-sprites;
 */
-$ico-service-gasstation-name: 'ico_service_gasstation';
-$ico-service-gasstation-x: 0px;
-$ico-service-gasstation-y: 0px;
-$ico-service-gasstation-offset-x: 0px;
-$ico-service-gasstation-offset-y: 0px;
-$ico-service-gasstation-width: 27px;
-$ico-service-gasstation-height: 27px;
-$ico-service-gasstation-total-width: 81px;
-$ico-service-gasstation-total-height: 81px;
-$ico-service-gasstation-image: 'main_sprite.png';
-$ico-service-gasstation: (0px, 0px, 0px, 0px, 27px, 27px, 81px, 81px, 'main_sprite.png', 'ico_service_gasstation', );
-$ico-service-health-name: 'ico_service_health';
-$ico-service-health-x: 27px;
-$ico-service-health-y: 0px;
-$ico-service-health-offset-x: -27px;
-$ico-service-health-offset-y: 0px;
-$ico-service-health-width: 27px;
-$ico-service-health-height: 27px;
-$ico-service-health-total-width: 81px;
-$ico-service-health-total-height: 81px;
-$ico-service-health-image: 'main_sprite.png';
-$ico-service-health: (27px, 0px, -27px, 0px, 27px, 27px, 81px, 81px, 'main_sprite.png', 'ico_service_health', );
-$ico-service-hotel-name: 'ico_service_hotel';
-$ico-service-hotel-x: 0px;
-$ico-service-hotel-y: 27px;
-$ico-service-hotel-offset-x: 0px;
-$ico-service-hotel-offset-y: -27px;
-$ico-service-hotel-width: 27px;
-$ico-service-hotel-height: 27px;
-$ico-service-hotel-total-width: 81px;
-$ico-service-hotel-total-height: 81px;
-$ico-service-hotel-image: 'main_sprite.png';
-$ico-service-hotel: (0px, 27px, 0px, -27px, 27px, 27px, 81px, 81px, 'main_sprite.png', 'ico_service_hotel', );
-$ico-service-ironwork-name: 'ico_service_ironwork';
-$ico-service-ironwork-x: 27px;
-$ico-service-ironwork-y: 27px;
-$ico-service-ironwork-offset-x: -27px;
-$ico-service-ironwork-offset-y: -27px;
-$ico-service-ironwork-width: 27px;
-$ico-service-ironwork-height: 27px;
-$ico-service-ironwork-total-width: 81px;
-$ico-service-ironwork-total-height: 81px;
-$ico-service-ironwork-image: 'main_sprite.png';
-$ico-service-ironwork: (27px, 27px, -27px, -27px, 27px, 27px, 81px, 81px, 'main_sprite.png', 'ico_service_ironwork', );
-$ico-service-market-name: 'ico_service_market';
-$ico-service-market-x: 54px;
-$ico-service-market-y: 0px;
-$ico-service-market-offset-x: -54px;
-$ico-service-market-offset-y: 0px;
-$ico-service-market-width: 27px;
-$ico-service-market-height: 27px;
-$ico-service-market-total-width: 81px;
-$ico-service-market-total-height: 81px;
-$ico-service-market-image: 'main_sprite.png';
-$ico-service-market: (54px, 0px, -54px, 0px, 27px, 27px, 81px, 81px, 'main_sprite.png', 'ico_service_market', );
 $ico-service-movies-name: 'ico_service_movies';
-$ico-service-movies-x: 54px;
-$ico-service-movies-y: 27px;
-$ico-service-movies-offset-x: -54px;
-$ico-service-movies-offset-y: -27px;
+$ico-service-movies-x: 0px;
+$ico-service-movies-y: 0px;
+$ico-service-movies-offset-x: 0px;
+$ico-service-movies-offset-y: 0px;
 $ico-service-movies-width: 27px;
 $ico-service-movies-height: 27px;
-$ico-service-movies-total-width: 81px;
-$ico-service-movies-total-height: 81px;
+$ico-service-movies-total-width: 54px;
+$ico-service-movies-total-height: 27px;
 $ico-service-movies-image: 'main_sprite.png';
-$ico-service-movies: (54px, 27px, -54px, -27px, 27px, 27px, 81px, 81px, 'main_sprite.png', 'ico_service_movies', );
+$ico-service-movies: 0px 0px 0px 0px 27px 27px 54px 27px '/images/main_sprite.png' 'ico_service_movies';
 $ico-service-museum-name: 'ico_service_museum';
-$ico-service-museum-x: 0px;
-$ico-service-museum-y: 54px;
-$ico-service-museum-offset-x: 0px;
-$ico-service-museum-offset-y: -54px;
+$ico-service-museum-x: 27px;
+$ico-service-museum-y: 0px;
+$ico-service-museum-offset-x: -27px;
+$ico-service-museum-offset-y: 0px;
 $ico-service-museum-width: 27px;
 $ico-service-museum-height: 27px;
-$ico-service-museum-total-width: 81px;
-$ico-service-museum-total-height: 81px;
+$ico-service-museum-total-width: 54px;
+$ico-service-museum-total-height: 27px;
 $ico-service-museum-image: 'main_sprite.png';
-$ico-service-museum: (0px, 54px, 0px, -54px, 27px, 27px, 81px, 81px, 'main_sprite.png', 'ico_service_museum', );
-$spritesheet-width: 81px;
-$spritesheet-height: 81px;
+$ico-service-museum: 27px 0px -27px 0px 27px 27px 54px 27px '/images/main_sprite.png' 'ico_service_museum';
+$spritesheet-width: 54px;
+$spritesheet-height: 27px;
 $spritesheet-image: 'main_sprite.png';
-$spritesheet-sprites: ($ico-service-gasstation, $ico-service-health, $ico-service-hotel, $ico-service-ironwork, $ico-service-market, $ico-service-movies, $ico-service-museum, );
-$spritesheet: (81px, 81px, 'main_sprite.png', $spritesheet-sprites, );
+$spritesheet-sprites: ($ico-service-movies, $ico-service-museum, );
+$spritesheet: (54px, 27px, 'main_sprite.png', $spritesheet-sprites, );
 
 /*
 The provided mixins are intended to be used with the array-like variables
@@ -106,29 +51,41 @@ The provided mixins are intended to be used with the array-like variables
 }
 */
 @mixin sprite-width($sprite) {
-  width: $(sprite)(5);
+  width: list($sprite, 4);
 }
 
 @mixin sprite-height($sprite) {
-  height: nth($sprite, 6);
+  height: list($sprite, 5);
 }
 
 @mixin sprite-position($sprite) {
-  $sprite-offset-x: nth($sprite, 3);
-  $sprite-offset-y: nth($sprite, 4);
+  $sprite-offset-x: list($sprite, 2);
+  $sprite-offset-y: list($sprite, 3);
   background-position: $sprite-offset-x  $sprite-offset-y;
 }
 
 @mixin sprite-image($sprite) {
-  $sprite-image: nth($sprite, 9);
-  background-image: url(#{$sprite-image});
+  $sprite-image: list($sprite, 8);
+  background-image: url($sprite-image);
 }
 
 @mixin sprite($sprite) {
+/*
   @include sprite-image($sprite);
   @include sprite-position($sprite);
   @include sprite-width($sprite);
   @include sprite-height($sprite);
+*/
+  $sprite-image: list($sprite, 8);
+  background-image: url($sprite-image);
+
+  $sprite-offset-x: list($sprite, 2);
+  $sprite-offset-y: list($sprite, 3);
+  background-position: $sprite-offset-x  $sprite-offset-y; 
+
+  width: list($sprite, 4);
+
+  height: list($sprite, 5);
 }
 
 /*
@@ -139,9 +96,10 @@ The `sprites` mixin generates identical output to the CSS template
 */
 @mixin sprites($sprites) {
   @each $sprite in $sprites {
-    $sprite-name: $sprite[10];
-    .$(sprite-name) {
+    $sprite-name: list($sprite, 9);
+    .($sprite-name) {
       @include sprite($sprite);
     }
   }
 }
+

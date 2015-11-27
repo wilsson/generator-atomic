@@ -12,7 +12,7 @@ module.exports = function Task(gulp,path,plugins,config){
 
     gulp.task('copy:img:sprites',function(){
 		return gulp.src(path.frontend.images +  '/*_sprite.png')
-        	.pipe(gulp.dest(path.dest.serverFiles));
+        	.pipe(gulp.dest(path.dest.img));
     });
    gulp.task('copy',['copy:css','copy:img:sprites']);
 };

@@ -1,0 +1,9 @@
+.icono{
+  @include sprite($ico-service-museum);
+  display:block;
+}
+
+.icono2{
+  @include sprite($ico-service-movies);
+  display:block;
+}

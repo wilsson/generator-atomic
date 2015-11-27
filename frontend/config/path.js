@@ -16,6 +16,7 @@ Path.frontend.images = Path.source + '/images';
 Path.dest.serverFiles  = Path.base + '/public';
 Path.dest.css          = Path.dest.serverFiles + '/css';
 Path.dest.html         = Path.dest.serverFiles + '/html';
-Path.dest.fonts        = Path.dest.serverFiles + '/fonts'
+Path.dest.fonts        = Path.dest.serverFiles + '/fonts';
+Path.dest.img          = Path.dest.serverFiles + '/images';
 
 module.exports = Path; 

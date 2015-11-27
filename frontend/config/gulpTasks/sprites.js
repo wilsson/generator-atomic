@@ -21,6 +21,6 @@ module.exports = function Task(gulp,path,plugins,config){
    * (gulp sprites)
    */
   gulp.task('sprites', function(cb){
-    plugins.runSequence('sprites:compile', 'css', cb)
+      plugins.runSequence('sprites:compile','copy:img:sprites','css', cb);
   });
 };
