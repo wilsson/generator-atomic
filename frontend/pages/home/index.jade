@@ -1,0 +1,11 @@
+include ../all/atoms/jade/inputs.jade
+html
+
+	//- @molecule all/head
+	//- @molecule home/head
+	//- {{ molecule: all/head }}
+
+	include ../all/molecules/jade/head.jade
+
+	body
+		+atom_input_normal({type:"text", name:"hola"})
