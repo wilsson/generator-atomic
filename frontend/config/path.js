@@ -18,8 +18,8 @@ Path.backend.base  	= Path.base + '/backend';
  *
 */
 Path.frontend.jade  = [
-  Path.frontend.base+'/pages/**/*.jade',
-  '!'+Path.frontend.base+'/pages/**/**/jade/*.jade'
+  		Path.frontend.base+'/pages/**/*.jade',
+	'!'+Path.frontend.base+'/pages/**/**/jade/*.jade'
 ];
 Path.backend.jade   = Path.backend.base + '/public';
 
