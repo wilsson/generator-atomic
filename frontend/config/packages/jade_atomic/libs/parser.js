@@ -1,5 +1,5 @@
 //features to override in Jade.Parser
-var overrideParser =  function( parserInstance){
+var overrideParser =  function( parserInstance, xpath){
     var fs = require('fs');
     var _superParseExpr = parserInstance.prototype.parseExpr;
 
@@ -13,7 +13,7 @@ var overrideParser =  function( parserInstance){
       var body = this.peek();
       var chunks = tok.val;
       
-      var path = __dirname + '/../../../../frontend/pages/' + chunks[2] + '/' + chunks[1] + 's/jade/' + chunks[3] + '.jade';
+      var path = xpath + '/pages/' + chunks[2] + '/' + chunks[1] + 's/jade/' + chunks[3] + '.jade';
       var str = fs.readFileSync(path, 'utf8');
 
       var parser = new this.constructor(str, path, this.options);

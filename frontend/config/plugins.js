@@ -3,6 +3,7 @@ var processor = require('./pluginsPostcss');
 module.exports =  plugins = {
   fs          : require('fs'),
   jade        : require('jade'),
+  jadeAtomic  : require('./packages/jade_atomic/index'),
   consolidate : require('gulp-consolidate'),
   lodash      : require('lodash'),
   gulpPostcss : require('gulp-postcss'),

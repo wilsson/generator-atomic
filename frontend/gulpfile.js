@@ -13,7 +13,8 @@ function runTask(task){
 }
 
 runTask('jade');
+runTask('browsersync');
+runTask('watch');
 
 
-gulp.task('server',['express','bs','watch']);
-gulp.task('default',['fonts','css','copy']);
+gulp.task('default',['jade', 'browsersync', 'watch']);
