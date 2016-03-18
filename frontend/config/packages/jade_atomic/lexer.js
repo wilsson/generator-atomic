@@ -4,17 +4,14 @@ var overrideLexer =  function(lexerInstance){
    * Block interpolation.
    */
    lexerInstance.prototype.atomicInclude = function(){
-    console.log(this.input);
-    console.log('_____');
-     var regexSyntaxCode = /^\@(atom|molecule|organism) ([a-z]+)\/([a-z]+)/;
+     var regexSyntaxCode = /^\+(atom|molecule|organism) ([a-z_]+)\/([a-z_]+)/;
      var captures = regexSyntaxCode.exec(this.input);
        if ( captures !== null) {
-       this.consume(captures[0].length - 1);
+       this.consume(captures[0].length);
        
        var tok = this.tok('atomicInclude', captures);
-       this.pipeless = true;
+       this.pipeless = false;
        this.buffer = true;
-       console.log(tok);
        return tok;
      }
    };

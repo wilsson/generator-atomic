@@ -1,18 +1,34 @@
 //features to override in Jade.Parser
-var overrideParser =  function( parserInstance, nodeInstance ){
+var overrideParser =  function( parserInstance){
+    var fs = require('fs');
     var _superParseExpr = parserInstance.prototype.parseExpr;
+
+    var merge = function(a, b) {
+      for (var key in b) a[key] = b[key];
+      return a;
+    };
 
     parserInstance.prototype.parseincludedAtomic = function(){
       var tok = this.expect('atomicInclude');
-      var node;
       var body = this.peek();
-      console.log(body);
-      console.log(tok.val);
       var chunks = tok.val;
+      
+      var path = __dirname + '/../../../../frontend/pages/' + chunks[2] + '/' + chunks[1] + 's/jade/' + chunks[3] + '.jade';
+      var str = fs.readFileSync(path, 'utf8');
 
-      // return 'include ../all/molecules/jade/head.jade';
-      return new nodeInstance.Code('include ../all/molecules/jade/head.jade', true, false);
-      // return 'p hola';
+      var parser = new this.constructor(str, path, this.options);
+      parser.dependencies = this.dependencies;
+
+      parser.blocks = merge({}, this.blocks);
+      parser.included = true;
+
+      parser.mixins = this.mixins;
+
+      this.context(parser);
+      var ast = parser.parse();
+      this.context();
+      ast.filename = path;
+      return ast;
     };
 
     parserInstance.prototype.parseExpr = function(){
