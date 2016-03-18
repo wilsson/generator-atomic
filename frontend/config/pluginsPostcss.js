@@ -14,5 +14,9 @@ module.exports = processor = [
   require('postcss-each'),
   require('postcss-simple-vars'),
   functions,
-  require('lost')
+  require('lost'),
+  /* - - - - */
+  require('cssnano'),
+  require('autoprefixer'),
+  require('postcss-media-minmax')
 ];
