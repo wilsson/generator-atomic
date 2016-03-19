@@ -1,22 +1,32 @@
-var Path = {base:{},frontend:{},dest:{}};
 
-Path.base = __dirname + '/../..';
+/*
+ * @path
+ *
+*/
 
-//---------------
+var 
+Path 								= {};
+Path.frontend 			= {};
+Path.backend				= {};
+Path.base  					= __dirname + '/../..';
+Path.frontend.base 	= Path.base + '/frontend';
+Path.backend.base  	= Path.base + '/backend';
 
-Path.frontend.base  = Path.base + '/frontend';
-Path.source         = Path.frontend.base + '/source';
 
-Path.frontend.html  = Path.source + '/html';
-Path.frontend.css   = Path.source + '/css';
-Path.frontend.fonts = Path.source + '/fonts';
-Path.frontend.images = Path.source + '/images';
-//---------------
+/*
+ * @path Jade
+ *
+*/
+Path.frontend.jade  = [
+  		Path.frontend.base+'/pages/**/*.jade',
+	'!'+Path.frontend.base+'/pages/**/**/jade/*.jade'
+];
+Path.backend.jade   = Path.backend.base + '/public';
 
-Path.dest.serverFiles  = Path.base + '/public';
-Path.dest.css          = Path.dest.serverFiles + '/css';
-Path.dest.html         = Path.dest.serverFiles + '/html';
-Path.dest.fonts        = Path.dest.serverFiles + '/fonts';
-Path.dest.img          = Path.dest.serverFiles + '/images';
+/*
+ * @path Css
+ *
+*/
+
 
 module.exports = Path; 

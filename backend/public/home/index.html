@@ -1,0 +1,85 @@
+
+<html>
+  <head>
+    <title>Hola home</title>
+    <meta name="title" content="title home2"/>
+    <meta name="dcterms.Creator" content="My Site Urbania pro"/>
+    <style>
+      *{
+      	margin:0;
+      	padding:0;
+      	box-sizing:border-box;
+      }
+      body{
+      	background: #ECE9E2;
+      	font-family:Arial;
+      }
+      .wrapper{
+      	display:flex;
+      	flex-direction:column;
+      }
+      header{
+      	color:white;
+      	width:100%;
+      	height:50px;
+      	padding:2px 10px;
+      	background-color:#9BBA38;
+      	display:flex;
+      	flex-direction:row;
+      }	
+      header .logo{
+      	width:200px;
+      	height:100%;
+      	line-height:50px;
+      	text-align:center;
+      	border:1px solid white;
+      	text-transform:uppercase;
+      }
+      header .header_inner{
+      	display:flex;
+      	width:100%;
+      	max-width:980px;
+      	margin:0 auto;
+      	flex-direction:row;
+      	justify-content:space-between;
+      }
+      .nav{
+      	list-style:none;
+      	display:flex;
+      	flex-direction:row;
+      	width:600px;
+      	border:1px solid white;
+      	line-height:50px;
+      	justify-content:space-around;
+      }
+      .content{
+      	width:980px;
+      	min-height:400px;
+      	background-color:white;
+      	padding:20px;
+      	margin:20px auto;
+      }
+      h1{
+      	text-align:center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="header_inner">
+          <div class="logo">Urbania</div>
+          <ul class="nav">
+            <li>menu 1</li>
+            <li>menu 2</li>
+            <li>menu 3</li>
+          </ul>
+        </div>
+      </header>
+      <div class="content">
+        <h1>welcome to urbania</h1>
+        <p>hello world</p>
+      </div>
+    </div>
+  </body>
+</html>
