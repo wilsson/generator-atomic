@@ -1,4 +1,82 @@
 ul.nav
-	li menu 1
-	li menu 2
-	li menu 3
+	li.nav-item
+		a(href="javascript:;") Venta
+	li.nav-item
+		a(href="javascript:;") Alquiler
+	li.nav-item
+		a(href="javascript:;") Proyectos
+		div.down_menu
+			ul
+				li
+					a(href="") Proyectos Scotiabank
+				li
+					a(href="") Todos los Proyectos
+	li.nav-item
+		a(href="javascript:;") Otros
+		div.down_menu
+			ul
+				li
+					a(href="") Inmobiliaria & Constructoras
+				li
+					a(href="") Agentes
+				li
+					a(href="") Calculadora Hipotecaria
+	li.nav-item
+		span.nav-item-title Pide tu crédito
+		a(href="javascript:;")
+			img(src='http://urbania.pe.s3.amazonaws.com/pre.3b.urbania.pe/static/online/img/icono.png?201603211456')
+	li.nav-item.register
+		span.nav-item-title Publica tu aviso
+		div.login
+			a(href="javascript:;" class="item_register bg-orange") Regístrate
+			a(href="javascript:;" class="item_register bg-green") Ingresa
+
+
+	style.
+		.nav-item{
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		alineacion: horizontal;
+		justify-content: center;
+		padding: 0 20px;
+		}
+		.nav-item .login{
+		display: flex;
+		}
+		.nav-item-title{
+		font-size: 12px;
+		}
+		.item_register{
+		margin: 0 2px;
+		line-height: 30px;
+		padding: 0 10px;
+		border-radius: 6px;
+		}
+		.register{
+		text-align: right;
+		padding: 0 0 0 20px;
+		}
+		.down_menu{
+		display:none;
+		position: absolute;
+		top: 75px;
+		left: -50px;
+		right: -44px;
+		text-align: center;
+		z-index: 5;
+		background: white;
+		}
+		.down_menu a{
+		color: black;
+		}
+		li:hover .down_menu{
+		display:block;
+		}
+
+		.bg-orange{
+		background: #ed6318;
+		}
+		.bg-green{
+		background: #5d7612;
+		}

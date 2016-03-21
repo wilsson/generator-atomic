@@ -5,7 +5,18 @@ html
 		//- header del mismo modulo
 		.wrapper
 			+organism home/header
+			.bg-portada
+				.content
+					+organism home/search
 
-			.content
-				h1 welcome to urbania
-				p hello world
+
+style.
+	.bg-portada{
+		position: relative;
+		top: 75px;
+		background: url(http://pre.3b.urbania.pe/static/online/img/portada-urbania.jpg) no-repeat center center;
+		display: block;
+		width: 100%;
+		height: 530px;
+		background-size: cover;
+	}
