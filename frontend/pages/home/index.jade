@@ -1,11 +1,11 @@
-include ../all/atoms/jade/inputs.jade
 html
-
-	//- @molecule all/head
-	//- @molecule home/head
-	//- {{ molecule: all/head }}
-
-	include ../all/molecules/jade/head.jade
-
+	+molecule home/head
 	body
-		+atom_input_normal({type:"text", name:"hola"})
+
+		//- header del mismo modulo
+		.wrapper
+			+organism home/header
+
+			.content
+				h1 welcome to urbania
+				p hello world
