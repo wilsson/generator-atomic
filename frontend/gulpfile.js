@@ -15,6 +15,6 @@ function runTask(task){
 runTask('jade');
 runTask('browsersync');
 runTask('watch');
-
+runTask('css');
 
 gulp.task('default',['jade', 'browsersync', 'watch']);
