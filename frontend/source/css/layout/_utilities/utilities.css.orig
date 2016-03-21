@@ -1,0 +1,30 @@
+body{
+  color: white;
+}
+a{
+  text-decoration: none;
+}
+
+ul{
+  padding: 0;
+}
+
+.u-wrapper_page{
+  lost-center: 980px;
+}
+
+.u-center{
+  text-align: center;
+}
+
+.u-title{
+  color: white;
+  font-size: 38px;
+}
+
+.u-orange{
+  color: #ed6318;
+}
+.u-bg-orange{
+  background:  #ed6318;
+}
