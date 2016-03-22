@@ -6,17 +6,33 @@ html
 		.wrapper
 			+organism home/header
 			.bg-portada
-				.content
+				.u-content
 					+organism home/search
+			.box_projects
+				.u-content
+					h2.u-help-text Encuentra departamentos, casas, oficinas y terrenos en alquiler o venta en:</br>Lima, Arequipa, Trujillo, Chiclayo, Ica, Huancayo y Cusco.
+					h2.u-urb-title.orange Estos son los últimos proyectos que tenemos para ti
+			+organism home/footer
 
 
 style.
 	.bg-portada{
-		position: relative;
+		display: flex;
+		align-items: center;
 		top: 75px;
 		background: url(http://pre.3b.urbania.pe/static/online/img/portada-urbania.jpg) no-repeat center center;
-		display: block;
 		width: 100%;
 		height: 530px;
 		background-size: cover;
+	}
+
+	.u-help-text{
+		color: #4c4c4c;
+		font-size: 20px;
+		line-height: 25.2px;
+		margin-bottom: 14px;
+	}
+	.u-urb-title{
+		font-size: 32px;
+		margin-bottom: 30px;
 	}
