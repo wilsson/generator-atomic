@@ -1,4 +1,4 @@
-var fs    = require('fs'), 
+var fs    = require('fs'),
    gulp   = require('gulp'),
   path    = require('./config/path'),
   plugins = require('./config/plugins'),
@@ -17,4 +17,4 @@ runTask('browsersync');
 runTask('watch');
 runTask('css');
 
-gulp.task('default',['jade', 'browsersync', 'watch']);
+gulp.task('default',['jade', 'css', 'browsersync', 'watch']);
