@@ -1,0 +1,35 @@
+footer{
+	background: #6e8529;
+	color: #fff;
+}
+.footer{
+	text-align: left;
+}
+.u-grid {
+  lost-utility: clearfix;
+}
+.u-grid-col {
+  lost-column: 1/4;
+}
+.u-grid-title{
+	font-size: 18.2px;
+	line-height: 21px;
+	margin-bottom: 14px;
+	text-shadow: 0 1px 2px #333;
+}
+.a-grid-item{
+	background: #5e7221;
+	border-radius: 5px;
+	display: inline-block;
+	font-size: 12.6px;
+	line-height: 18.2px;
+	margin-bottom: 10px;
+	padding: 6.3px 16.8px;
+}
+
+
+/*payment_methods*/
+.payment_methods{
+	background: #5e7221;
+	padding: 14px 0;
+}

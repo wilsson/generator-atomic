@@ -1,10 +1,10 @@
 ul.nav
 	li.nav-item
-		a(href="javascript:;") Venta
+		a(href="javascript:;" class="nav-item-a") Venta
 	li.nav-item
-		a(href="javascript:;") Alquiler
+		a(href="javascript:;" class="nav-item-a") Alquiler
 	li.nav-item
-		a(href="javascript:;") Proyectos
+		a(href="javascript:;" class="nav-item-a") Proyectos
 		div.down_menu
 			ul
 				li
@@ -12,7 +12,7 @@ ul.nav
 				li
 					a(href="") Todos los Proyectos
 	li.nav-item
-		a(href="javascript:;") Otros
+		a(href="javascript:;" class="nav-item-a") Otros
 		div.down_menu
 			ul
 				li
@@ -23,7 +23,7 @@ ul.nav
 					a(href="") Calculadora Hipotecaria
 	li.nav-item
 		span.nav-item-title Pide tu crédito
-		a(href="javascript:;")
+		a(href="javascript:;" class="nav-item-a")
 			img(src='http://urbania.pe.s3.amazonaws.com/pre.3b.urbania.pe/static/online/img/icono.png?201603211456')
 	li.nav-item.register
 		span.nav-item-title Publica tu aviso
@@ -35,17 +35,23 @@ ul.nav
 	style.
 		.nav-item{
 		position: relative;
-		display: flex;
-		flex-direction: column;
-		alineacion: horizontal;
 		justify-content: center;
 		padding: 0 20px;
+		}
+		.nav-item .nav-item-a{
+		line-height: 75px;
+		display: block;
+		font-weight: 600;
+		}
+		.nav-item .nav-item-a:hover{
+		color: rgba(0, 0, 0, 0.5);
 		}
 		.nav-item .login{
 		display: flex;
 		}
 		.nav-item-title{
 		font-size: 12px;
+		line-height: 35px;
 		}
 		.item_register{
 		margin: 0 2px;
@@ -74,6 +80,9 @@ ul.nav
 		display:block;
 		}
 
+		.orange{
+		color: #ed6318;
+		}
 		.bg-orange{
 		background: #ed6318;
 		}
