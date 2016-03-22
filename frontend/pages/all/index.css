@@ -1,0 +1,7 @@
+@import "atoms/**/*.css";
+@import "molecules/**/*.css";
+@import "organisms/**/*.css";
+
+.test{
+    color:peru;
+}
