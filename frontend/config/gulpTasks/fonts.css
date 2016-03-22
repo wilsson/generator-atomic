@@ -1,0 +1,77 @@
+
+@font-face{
+	font-family: "gotham";
+	src: url("/fonts/gotham/gotham-webfont.eot");
+	src: url("/fonts/gotham/gotham-webfont.eot?#iefix") format("embedded-opentype"),
+		url("/fonts/gotham/gotham-webfont.woff") format("woff"),
+		url("/fonts/gotham/gotham-webfont.ttf") format("truetype"),
+		url("/fonts/gotham/gotham-webfont.svg#gotham") format("svg");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face{
+	font-family: "gotham-book";
+	src: url("/fonts/gotham-book/gotham-book-webfont.eot");
+	src: url("/fonts/gotham-book/gotham-book-webfont.eot?#iefix") format("embedded-opentype"),
+		url("/fonts/gotham-book/gotham-book-webfont.woff") format("woff"),
+		url("/fonts/gotham-book/gotham-book-webfont.ttf") format("truetype"),
+		url("/fonts/gotham-book/gotham-book-webfont.svg#gotham-book") format("svg");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face{
+	font-family: "gotham-medium";
+	src: url("/fonts/gotham-medium/gotham-medium-webfont.eot");
+	src: url("/fonts/gotham-medium/gotham-medium-webfont.eot?#iefix") format("embedded-opentype"),
+		url("/fonts/gotham-medium/gotham-medium-webfont.woff") format("woff"),
+		url("/fonts/gotham-medium/gotham-medium-webfont.ttf") format("truetype"),
+		url("/fonts/gotham-medium/gotham-medium-webfont.svg#gotham-medium") format("svg");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face{
+	font-family: "iconFonts";
+	src: url("/fonts/iconFonts/iconFonts-webfont.eot");
+	src: url("/fonts/iconFonts/iconFonts-webfont.eot?#iefix") format("embedded-opentype"),
+		url("/fonts/iconFonts/iconFonts-webfont.woff") format("woff"),
+		url("/fonts/iconFonts/iconFonts-webfont.ttf") format("truetype"),
+		url("/fonts/iconFonts/iconFonts-webfont.svg#iconFonts") format("svg");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face{
+	font-family: "indiepimptbs";
+	src: url("/fonts/indiepimptbs/indiepimptbs-webfont.eot");
+	src: url("/fonts/indiepimptbs/indiepimptbs-webfont.eot?#iefix") format("embedded-opentype"),
+		url("/fonts/indiepimptbs/indiepimptbs-webfont.woff") format("woff"),
+		url("/fonts/indiepimptbs/indiepimptbs-webfont.ttf") format("truetype"),
+		url("/fonts/indiepimptbs/indiepimptbs-webfont.svg#indiepimptbs") format("svg");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face{
+	font-family: "montserrat-bold";
+	src: url("/fonts/montserrat-bold/montserrat-bold-webfont.eot");
+	src: url("/fonts/montserrat-bold/montserrat-bold-webfont.eot?#iefix") format("embedded-opentype"),
+		url("/fonts/montserrat-bold/montserrat-bold-webfont.woff") format("woff"),
+		url("/fonts/montserrat-bold/montserrat-bold-webfont.ttf") format("truetype"),
+		url("/fonts/montserrat-bold/montserrat-bold-webfont.svg#montserrat-bold") format("svg");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face{
+	font-family: "montserrat-regular";
+	src: url("/fonts/montserrat-regular/montserrat-regular-webfont.eot");
+	src: url("/fonts/montserrat-regular/montserrat-regular-webfont.eot?#iefix") format("embedded-opentype"),
+		url("/fonts/montserrat-regular/montserrat-regular-webfont.woff") format("woff"),
+		url("/fonts/montserrat-regular/montserrat-regular-webfont.ttf") format("truetype"),
+		url("/fonts/montserrat-regular/montserrat-regular-webfont.svg#montserrat-regular") format("svg");
+	font-style: normal;
+	font-weight: normal;
+}

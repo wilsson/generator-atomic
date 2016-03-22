@@ -16,5 +16,6 @@ runTask('jade');
 runTask('browsersync');
 runTask('watch');
 runTask('css');
+runTask('fonts');
 
 gulp.task('default',['jade', 'css', 'browsersync', 'watch']);

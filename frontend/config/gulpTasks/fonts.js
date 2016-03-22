@@ -7,14 +7,10 @@ module.exports = function Task(gulp,path,plugins,config){
       dirList.push(file);
     }
   }); 
-    
+  console.log('dirList>>>',dirList); 
   gulp.task('fonts',function(){
-    //console.log(dirList,'distList');
-    //console.log(path.frontend.fonts+'/_template/fonts.css');
-    //console.log(path.frontend.css+'/layout');
     return gulp.src(path.frontend.fonts+'/_template/fonts.css')
-      .pipe(plugins.consolidate('lodash',{dirList:dirList}))
-      .pipe(gulp.dest(path.frontend.css+'/layout'));
-      //return console.log(dirList);
+      .pipe(plugins.consolidate('lodash', { dirList: dirList }))
+      .pipe(gulp.dest(__dirname));
   }); 
 };

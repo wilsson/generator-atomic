@@ -9,10 +9,19 @@ Path.base           = __dirname + '/../..';
 Path.frontend.base  = Path.base + '/frontend';
 Path.backend.base   = Path.base + '/backend';
 
+
+/*
+ * @path Fonts
+ *
+ */
+
+Path.frontend.fonts = Path.frontend.base + '/source/fonts';
+
 /*
  * @path Jade
  *
 */
+
 Path.frontend.jade  = [
   Path.frontend.base+'/pages/**/*.jade',
   '!'+Path.frontend.base+'/pages/**/**/jade/*.jade'
