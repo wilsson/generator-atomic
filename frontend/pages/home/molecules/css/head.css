@@ -1,20 +1,5 @@
-a{
-	color: white;
-	text-decoration: none;
-	transition: all .2s ease-in;
-	-webkit-transition: all .2s ease-in;
-	-moz-transition: all .2s ease-in;
-	-ms-transition: all .2s ease-in;
-	-o-transition: all .2s ease-in;
-}
-ul{
-	list-style:none;
-}
-.wrapper{
-	display:flex;
-	flex-direction:column;
-}
 header{
+	font-family: $family2;
 	position: fixed;
 	color:white;
 	width:100%;
@@ -22,15 +7,9 @@ header{
 	background-color:#9BBA38;
 	display:flex;
 	flex-direction:row;
+	z-index: 5;
 }
-header .logo{
-	width:200px;
-	height:100%;
-	line-height:50px;
-	text-align:center;
-	text-transform:uppercase;
-}
-header .header_inner{
+.header_inner{
 	display:flex;
 	align-items: center;
 	width:100%;
@@ -38,6 +17,12 @@ header .header_inner{
 	margin:0 auto;
 	flex-direction:row;
 	justify-content:space-between;
+}
+header .a-header.logo{
+	width:200px;
+	line-height:50px;
+	text-align:center;
+	text-transform:uppercase;
 }
 .nav{
 	list-style:none;

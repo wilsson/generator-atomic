@@ -3,6 +3,10 @@
 @import "molecules/**/*.css";
 @import "organisms/**/*.css";
 
+<<<<<<< Updated upstream
+.test1{
+    font-family:$family1;
+=======
 *{
 	margin:0;
 	padding:0;
@@ -10,7 +14,7 @@
 }
 body{
 	background: #ECE9E2;
-	font-family: $family1;
+	font-family:Arial;
 }
 a{
 	color: white;
@@ -36,4 +40,5 @@ ul{
 }
 .bg-green{
 	background: #5d7612;
+>>>>>>> Stashed changes
 }

@@ -3,6 +3,10 @@
 @import "molecules/**/*.css";
 @import "organisms/**/*.css";
 
+<<<<<<< Updated upstream
+.nav-item-title{
+	font-family:$family2;
+=======
 .bg-portada{
 	display: flex;
 	align-items: center;
@@ -25,4 +29,5 @@
 }
 .flex{
 	display: flex;
+>>>>>>> Stashed changes
 }

@@ -1,0 +1,10 @@
+<<<<<<< Updated upstream
+a{
+    color:black; 
+}
+
+.test1{
+    font-family:$family1;
+}
+=======
+>>>>>>> Stashed changes
