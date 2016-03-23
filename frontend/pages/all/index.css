@@ -1,7 +1,8 @@
+@import "_variables.css";
 @import "atoms/**/*.css";
 @import "molecules/**/*.css";
 @import "organisms/**/*.css";
 
-.test{
-    color:peru;
+.test1{
+    font-family:$family1;
 }

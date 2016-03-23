@@ -1,3 +1,8 @@
+@import "../all/_variables.css";
 @import "atoms/**/*.css";
 @import "molecules/**/*.css";
 @import "organisms/**/*.css";
+
+.nav-item-title{
+	font-family:$family2;
+}

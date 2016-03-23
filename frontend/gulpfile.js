@@ -17,5 +17,6 @@ runTask('browsersync');
 runTask('watch');
 runTask('css');
 runTask('fonts');
+runTask('copy');
 
-gulp.task('default',['jade', 'css', 'browsersync', 'watch']);
+gulp.task('default',['jade', 'fonts', 'css', 'copy', 'browsersync', 'watch']);

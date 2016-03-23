@@ -16,7 +16,7 @@ module.exports = processor = [
   functions,
   require('lost'),
   /* - - - - */
-  require('cssnano'),
+  //require('cssnano'),
   require('autoprefixer'),
   require('postcss-media-minmax')
 ];

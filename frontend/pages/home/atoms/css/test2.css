@@ -1,3 +1,7 @@
 a{
     color:black; 
 }
+
+.test1{
+    font-family:$family1;
+}

@@ -34,6 +34,7 @@ Path.frontend.jade  = [
 
 Path.frontend.css  = [
   Path.frontend.base+'/pages/**/*.css',
+  '!'+Path.frontend.base+'/pages/**/_*.css',
   '!'+Path.frontend.base+'/pages/**/**/css/*.css'
 ];
 
