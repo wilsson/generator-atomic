@@ -1,25 +1,22 @@
 html
-	+molecule home/head
-	body
+  +molecule home/head
+  body
 
-		//- header del mismo modulo
-		.wrapper
-			+organism home/header
-			.bg-portada
-				.u-content
-					+organism home/search
-			.box_projects.flex
-				.u-content
-					h2.u-help-text Encuentra departamentos, casas, oficinas y terrenos en alquiler o venta en:</br>Lima, Arequipa, Trujillo, Chiclayo, Ica, Huancayo y Cusco.
-					h2.u-urb-title.orange Estos son los últimos proyectos que tenemos para ti
-			.box_projects.flex
-				.u-content
-					ul
-						- for(var i=0;i<6;i++){
-							+molecule home/project_card
-						- }
-					+atom home/btn-project
-			+organism home/footer
-
-
-	
+    //- header del mismo modulo
+    .wrapper
+      +organism home/header
+      .bg-portada
+        .u-content
+          +organism home/search
+      .box_projects.flex
+        .u-content
+          h2.u-help-text Encuentra departamentos, casas, oficinas y terrenos en alquiler o venta en:</br>Lima, Arequipa, Trujillo, Chiclayo, Ica, Huancayo y Cusco.
+          h2.u-urb-title.orange Estos son los últimos proyectos que tenemos para ti
+      .box_projects.flex
+        .u-content
+          ul
+            - for(var i=0;i<6;i++){
+              +molecule home/project_card
+            - }
+          +atom home/btn-project
+      +organism home/footer

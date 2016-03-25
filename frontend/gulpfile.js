@@ -18,5 +18,6 @@ runTask('watch');
 runTask('css');
 runTask('fonts');
 runTask('copy');
+runTask('express');
 
 gulp.task('default',['jade', 'fonts', 'css', 'copy', 'browsersync', 'watch']);
