@@ -10,11 +10,16 @@ html
 				.u-content
 					h2.u-help-text Encuentra departamentos, casas, oficinas y terrenos en alquiler o venta en:</br>Lima, Arequipa, Trujillo, Chiclayo, Ica, Huancayo y Cusco.
 					h2.u-urb-title.orange Estos son los últimos proyectos que tenemos para ti
-			.box_projects.flex
-				.u-content
 					div.grid
 						- for(var i=0;i<6;i++){
 							+molecule home/project_card
 						- }
 					+atom home/btn-project
+			.box
+				.u-content
+					h2.title-proyecto-home Inmuebles destacados en alquiler
+					div.grid.immovables
+						- for(var i=0;i<8;i++){
+							+molecule home/immovables
+						- }
 			+organism home/footer

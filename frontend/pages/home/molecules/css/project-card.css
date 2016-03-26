@@ -20,7 +20,11 @@ div{
   position: relative;
   margin-bottom: 20px;
 }
-
+.u-grid-col4 {
+  lost-column: 1/4;
+  position: relative;
+  margin-bottom: 20px;
+}
 .project-file-hover{
 	cursor: pointer;
     display: none;
@@ -57,7 +61,7 @@ div{
     line-height: 1.5;
     background: rgba(237, 99, 24, 0.82);
 }
-.project-file-price .project-file-price-money::before {
+.project-file-price-money::before {
     position: absolute;
     content: "";
     border-top: 29px solid transparent;

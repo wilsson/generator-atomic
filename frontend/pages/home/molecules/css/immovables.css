@@ -1,0 +1,37 @@
+.immovables{
+	background: #fff;
+	padding: 20px 20px 0 20px;
+}
+.title-proyecto-home{
+	font-size: 24px;
+	margin: 15px 0 20px;
+	text-align: center;
+}
+.immovable-price{
+    display: flex;
+	position: absolute;
+	bottom: 0;
+    font-size: 18px;
+    right: 0;
+}
+.immovable-price-money{
+	background: #9bba38;
+	color: #fff;
+	display: inline-block;
+	font-size: 15.4px;
+	line-height: 40px;
+	margin: 0;
+	padding: 0 14px 0 3px;
+	text-align: left;
+	vertical-align: top;
+}
+.immovable-price-money::before {
+    position: absolute;
+    content: "";
+    border-top: 22px solid transparent;
+    border-right: 20px solid #9bba38;
+    border-bottom: 16px solid transparent;
+    left: -20px;
+    top: 0;
+    bottom: 0;
+}
