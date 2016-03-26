@@ -1,8 +1,19 @@
 div{
     position: relative;
 }
+.box_projects{
+    background: url(http://cdn.urbania.pe/static/online/img/bg_projects.jpg?v=2016215) no-repeat center center;
+    background-size: cover;
+}
 .grid{
     lost-utility: clearfix;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
 }
 .u-grid-col3 {
   lost-column: 1/3;
