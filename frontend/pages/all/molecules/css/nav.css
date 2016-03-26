@@ -3,14 +3,14 @@
 	justify-content: center;
 	padding: 0 20px;
 }
-.nav-item .a-nav-item{
+.a-nav-item{
 	line-height: 75px;
 	display: block;
 }
-.nav-item .a-nav-item:hover{
+.a-nav-item:hover{
 	color: rgba(0, 0, 0, 0.5);
 }
-.down_menu{
+.q-nav-item-down_menu{
 	display:none;
 	position: absolute;
 	top: 75px;
@@ -20,27 +20,9 @@
 	z-index: 5;
 	background: white;
 }
-.down_menu a{
+.q-nav-item-down_menu a{
 	color: black;
 }
-li:hover .down_menu{
+li:hover .q-nav-item-down_menu{
 	display:block;
-}
-
-.header-login{
-	display: flex;
-}
-.nav-item-title{
-	font-size: 12px;
-	line-height: 35px;
-}
-.item_register{
-	margin: 0 2px;
-	line-height: 30px;
-	padding: 0 10px;
-	border-radius: 6px;
-}
-.register{
-	text-align: right;
-	padding: 0 0 0 20px;
 }

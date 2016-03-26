@@ -1,0 +1,17 @@
+.header-login{
+	display: flex;
+}
+.nav-item-title{
+	font-size: 12px;
+	line-height: 35px;
+}
+.item_register{
+	margin: 0 2px;
+	line-height: 30px;
+	padding: 0 10px;
+	border-radius: 6px;
+}
+.register{
+	text-align: right;
+	padding: 0 0 0 20px;
+}

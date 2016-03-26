@@ -1,36 +1,15 @@
-ul.nav
-	li.nav-item
-		a(href="javascript:;" class="a-nav-item") Venta
-	li.nav-item
-		a(href="javascript:;" class="a-nav-item") Alquiler
-	li.nav-item
-		a(href="javascript:;" class="a-nav-item") Proyectos
-		div.down_menu
-			ul
-				li
-					a(href="") Proyectos Scotiabank
-				li
-					a(href="") Todos los Proyectos
-	li.nav-item
-		a(href="javascript:;" class="a-nav-item") Otros
-		div.down_menu
-			ul
-				li
-					a(href="") Inmobiliaria & Constructoras
-				li
-					a(href="") Agentes
-				li
-					a(href="") Calculadora Hipotecaria
+- var menus = {Venta: [], Alquiler: [], Proyectos: ['Proyectos scotiabank','Todos los proyectos'], otros:['Inmobiliaria & Constructoras','Agentes','Calculadora Hipotecaria']  };
+	ul.nav
+		each menuKey in Object.keys(menus)
+			- menu = menus[menuKey]
+			li.nav-item
+				a(href='' class="a-nav-item")=menuKey
+					ul.q-nav-item-down_menu
+						each submenu in menu
+							li
+								a(href='') #{submenu}
 
-div.a-credit-scotiabank
-	span.nav-item-title Pide tu crédito
-	div
-		a(href="javascript:;" class="a-nav-item")
-			img(src='http://urbania.pe.s3.amazonaws.com/pre.3b.urbania.pe/static/online/img/icono.png?201603211456')
+		//- each item in ['Venta', 'Alquiler', 'Proyectos', 'Otros']
+		//- 	li.nav-item: a(href="")= item
 
-div.a-public-notice
-	span.nav-item-title Publica tu aviso
-	div.header-login
-		a(href="javascript:;" class="item_register bg-orange") Regístrate
-		a(href="javascript:;" class="item_register bg-green") Ingresa
-	
++molecule home/login
