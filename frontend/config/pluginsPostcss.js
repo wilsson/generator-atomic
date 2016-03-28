@@ -1,10 +1,14 @@
 var functions  = require('postcss-functions')({
-    functions:{
-      list:function(list,index){
-        var res = list.split(' ');
-        return res[index];
-      }
+  functions:{
+    list:function(list,index){
+      var res = list.split(' ');
+      return res[index];
+    },
+    urlConcat:function(image){
+      var ruta = image;
+      return 'url('+ruta+')';
     }
+  }
 });
 
 module.exports = processor = [

@@ -9,11 +9,13 @@ module.exports = function Task(gulp,path,plugins,config){
     return gulp.src(pathCopyFontsFiles)
       .pipe(gulp.dest(path.dest.staticFiles+'/fonts'));
   });
-/*
+
   gulp.task('copy:img:sprites',function(){
-  return gulp.src(path.frontend.images +  '/*_sprite.png')
-    .pipe(gulp.dest(path.dest.img));
+    return gulp.src(path.frontend.images +  '/*_sprite.png')
+      .pipe(gulp.dest(path.dest.staticFiles+'/images'));
   });
-*/
-  gulp.task('copy',['copy:fonts']);
+
+  gulp.task('copy', function(cb){
+    plugins.runSequence('copy:fonts','copy:img:sprites', cb)
+  });
 };

@@ -15,9 +15,10 @@ function runTask(task){
 runTask('jade');
 runTask('browsersync');
 runTask('watch');
+runTask('copy');
 runTask('css');
 runTask('fonts');
-runTask('copy');
 runTask('express');
+runTask('sprites');
 
-gulp.task('default',['jade', 'fonts', 'css', 'copy', 'browsersync', 'watch']);
+gulp.task('default',['jade', 'fonts', 'sprites:compile', 'copy', 'css', 'browsersync', 'watch']);

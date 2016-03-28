@@ -52,4 +52,11 @@ Path.dest.jade   = Path.backend.base + '/public';
 
 Path.dest.staticFiles  = Path.backend.base + '/public/static';
 
+/*
+ * @path Fonts
+ *
+ */
+
+Path.frontend.images = Path.frontend.base + '/source/images'
+
 module.exports = Path;
