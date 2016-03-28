@@ -1,4 +1,5 @@
 @import "../all/_variables.css";
+@import "../all/_main_sprite.css";
 @import "atoms/**/*.css";
 @import "molecules/**/*.css";
 @import "organisms/**/*.css";
@@ -20,7 +21,7 @@
 	margin-bottom: 14px;
 }
 .u-urb-title{
-	font-size: 32px;
+	font: 32.2px/32.2px gotham-medium,arial,sans-serif;
 	margin-bottom: 30px;
 }
 .flex{

@@ -21,6 +21,7 @@ a{
 	-moz-transition: all .2s ease-in;
 	-ms-transition: all .2s ease-in;
 	-o-transition: all .2s ease-in;
+	display: inline-block;
 }
 ul{
 	list-style:none;
@@ -40,5 +41,24 @@ ul{
 }
 
 .test{
-  @include sprite($ovalado);
+	@include sprite($ovalado);
+}
+
+.payment.pe{
+	@include sprite($ico-cardpe);
+}
+.payment.visa{
+	@include sprite($ico-cardvisa);
+}
+.payment.master{
+	@include sprite($ico-cardmastercard);
+}
+.payment.verified{
+	@include sprite($ico-cardbyvisa);
+}
+.payment.securecode{
+	@include sprite($ico-cardsecurecode);
+}
+.payment.verifiedvisa{
+	@include sprite($ico-cardverified);
 }

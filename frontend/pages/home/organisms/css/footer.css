@@ -4,12 +4,21 @@ footer{
 }
 .footer{
 	text-align: left;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
 }
 .u-grid {
   lost-utility: clearfix;
 }
 .u-grid-col {
-  lost-column: 1/4;
+  lost-column: 1/3;
 }
 .u-grid-title{
 	font-size: 18.2px;
@@ -25,18 +34,30 @@ footer{
 	line-height: 18.2px;
 	margin-bottom: 10px;
 	padding: 6.3px 16.8px;
+
+	line-height: 20px;
+	margin: 0;
+	height: 29px;
+	overflow: hidden;
 }
 
+.logo_footer{
+	@include sprite($logo-urb);
+	margin-bottom: 26.6px;
+}
 
 /*payment_methods*/
 .footer-flex{
 	display: flex;
 	flex-flow: row wrap;
 	justify-content:space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 .payment_methods{
 	background: #5e7221;
-	padding: 14px 0;
 }
 .payment_methods-p{
 	font-size: 12px;
@@ -47,4 +68,64 @@ footer{
 }
 .footer-link{
 	font-size: 10.4px;
+	list-style: none;
+	margin: 0;
+	text-align: center;
+	width: 91%;
+}
+.footer-link-p{
+	width: 9%;
+   font-size: 10.5px;
+}
+.footer-link .nav-item{
+    display: inline-block;
+    padding: 0 1.5px;
+    margin-bottom: 6px;
+    font-size: 10.5px;
+}
+.footer-link-separator::after{
+	content: "|";
+	color: #fff;
+	margin-right: 4px;
+	margin-left: 4px;
+	font-family: arial;
+}
+
+.container-info-left{
+	width: 74%;
+}
+.container-info-rigth{
+	width: 25%;
+}
+.follow{
+	font-size: 18.2px;
+	line-height: 21px;
+	margin: 14px 0;
+	text-shadow: 0 1px 2px #333;
+	text-align: right;
+}
+.social_networks{
+	text-align: right;
+}
+.social_networks a {
+    font-size: 0;
+    margin: 0 0 0 8.4px;
+    text-indent: -9999;
+    transition: all .2s ease-out;
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -ms-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+ }
+.gp{
+	@include sprite($ico-googleplus);
+}
+.tw{
+	@include sprite($ico-twitter);
+}
+.fb{
+	@include sprite($ico-facebook);
+}
+.pt{
+	@include sprite($ico-pinterest);	
 }

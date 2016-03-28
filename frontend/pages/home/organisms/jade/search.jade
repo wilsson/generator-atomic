@@ -1,5 +1,8 @@
 div.o-search
-	h1 Busca entre más de 61000 avisos de inmuebles
+	h1 
+		| Busca entre más de 
+		span.orange 61000 
+		| avisos de inmuebles
 	form.m-search
 		select.a-search-type.bg-orange
 			option Quiero comprar
@@ -13,6 +16,7 @@ div.o-search
 			option Todos
 		input(type="text" placeholder="Busca por distrito, descripción o código").a-search-input
 		button.btn.btn-search.bg-orange Buscar
+			span.ico_search
 		div.links_search
 			a(href="" class="a-links-search") Casas de Playa |
 			a(href="" class="a-links-search") Casas de Campo |

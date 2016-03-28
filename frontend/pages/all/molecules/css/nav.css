@@ -19,9 +19,11 @@
 	text-align: center;
 	z-index: 5;
 	background: white;
+	width: 259px;
 }
 .q-nav-item-down_menu a{
 	color: black;
+	width: 259px;
 }
 li:hover .q-nav-item-down_menu{
 	display:block;

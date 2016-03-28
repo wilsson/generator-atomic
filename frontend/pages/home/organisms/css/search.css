@@ -1,4 +1,5 @@
 .m-search{
+    width: 96%;
     background: rgba(0, 0, 0, 0.27);
     text-align: center;
     padding: 24px 12px;
@@ -16,6 +17,10 @@
     width: 192.5px;
     color: white; 
     border: none;
+}
+.a-search-type option{
+    background: #fff;
+    color: #000;
 }
 .search-categorie{
     color: black;
@@ -49,15 +54,25 @@
 .btn-search{
 	float: right;
     margin-top: 13px;
-    margin-right: 34px;
     font-size: 20px;
     font-weight: 600;
 }
 .links_search{
     float: left;
-    margin-top: 23px;
+    margin-top: 35px;
     margin-left: 10px;
 }
-.links_search .a-links-search{
+.a-links-search{
     margin-right: 10px;
+    color: #fff;
+    font-size: 13px;
+    margin: 0 10px;
+    transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    -moz-transition: all .2s ease-in;
+    -ms-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+}
+.ico.search{
+   @include sprite($ico-search); 
 }

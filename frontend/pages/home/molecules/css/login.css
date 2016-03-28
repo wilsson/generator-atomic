@@ -2,8 +2,8 @@
 	display: flex;
 }
 .nav-item-title{
-	font-size: 12px;
-	line-height: 35px;
+    font-size: 12px;
+    line-height: 25px;
 }
 .item_register{
 	margin: 0 2px;
@@ -14,4 +14,7 @@
 .register{
 	text-align: right;
 	padding: 0 0 0 20px;
+}
+.a-public-notice{
+	text-align: right;
 }

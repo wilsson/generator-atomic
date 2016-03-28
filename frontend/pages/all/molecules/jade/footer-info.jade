@@ -1,67 +1,30 @@
-p LOGO
+div.container-info-left
+	p.logo_footer(src="")
 	section.u-grid
 		div.u-grid-col
 			p.u-grid-title Acerca de Urbania
 			ul
-				li
-					a(href="" class="a-grid-item") Quiénes somos
-				li
-					a(href="" class="a-grid-item") Mapa de sitios
-				li
-					a(href="" class="a-grid-item") Vender
-				li
-					a(href="" class="a-grid-item") Alquilar
-				li
-					a(href="" class="a-grid-item") Proyectos
-				li
-					a(href="" class="a-grid-item") Inmobiliarias & Constructores
-				li
-					a(href="" class="a-grid-item") Agentes
-				li
-					a(href="" class="a-grid-item") Calculadora Hipotecaria
-				li
-					a(href="" class="a-grid-item") Curso Agente inmobiliario
-				li
-					a(href="" class="a-grid-item") Oportunidad de negocio
+				each item in ['Quiénes somos', 'Mapa de sitios', 'Vender', 'Alquilar', 'Proyectos', 'Inmobiliarias & Constructores', 'Agentes', 'Calculadora Hipotecaria', 'Curso Agente inmobiliario', 'Oportunidad de negocio']
+					li: a.a-grid-item(href="")= item
 		div.u-grid-col
 			p.u-grid-title Distritos más buscados
 			ul
-				li
-					a(href="" class="a-grid-item") Miraflores
-				li
-					a(href="" class="a-grid-item") Santiago De Surco
-				li
-					a(href="" class="a-grid-item") San Isidro
-				li
-					a(href="" class="a-grid-item") La Molina
-				li
-					a(href="" class="a-grid-item") San Borja
-				li
-					a(href="" class="a-grid-item") Magdalena Del Mar
-				li
-					a(href="" class="a-grid-item") Pueblo Libre
-				li
-					a(href="" class="a-grid-item") Ver todos los distritos
+				each item in ['Miraflores', 'Santiago De Surco', 'San Isidro', 'La Molina', 'San Borja', 'Magdalena Del Mar', 'Pueblo Libre', 'Ver todos los distritos']
+					li: a.a-grid-item(href="")= item
 		div.u-grid-col
 			p.u-grid-title Proyectos más vistos
 			ul
-				li
-					a(href="" class="a-grid-item") Escala
-				li
-					a(href="" class="a-grid-item") Los Miradores Del Cielo
-				li
-					a(href="" class="a-grid-item") Empresa Inmobiliaria
-				li
-					a(href="" class="a-grid-item") Condominio
-				li
-					a(href="" class="a-grid-item") Parkoffice
-				li
-					a(href="" class="a-grid-item") Departamento En Campo
-				li
-					a(href="" class="a-grid-item") Benevento
+				each item in ['Escala', 'Los Miradores Del Cielo', 'Empresa Inmobiliaria', 'Condominio', 'Parkoffice', 'Departamento En Campo', 'Benevento']
+					li: a.a-grid-item(href="")= item
 			p.u-grid-title Otros
 				ul
 					li
-					a(href="" class="a-grid-item") Blog
+						a(href="" class="a-grid-item") Blog
 					li
 						a(href="" class="a-grid-item") App mobile
+div.container-info-rigth.social_networks
+	p.follow Síguenos en:
+	a.gp(href="")
+	a.pt(href="")
+	a.tw(href="")
+	a.fb(href="")

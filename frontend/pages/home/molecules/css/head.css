@@ -8,6 +8,10 @@ header{
 	display:flex;
 	flex-direction:row;
 	z-index: 5;
+	font-size: 14px;
+}
+.a-header-logo{
+	margin: 0 0 0 10px;
 }
 .header_inner{
 	display:flex;
@@ -30,6 +34,7 @@ header .a-header.logo{
 	flex-direction:row;
 	line-height:40px;
 	justify-content:space-around;
+	margin-left: 14px;
 }
 .u-content{
 	width:980px;
@@ -39,9 +44,8 @@ header .a-header.logo{
 	text-align: center;
 }
 h1{
-	text-align:center;
-	color: white;
-	font-size: 41px;
-	text-shadow: 0 0 4px #333;
-	margin-bottom: 14px;
+	color: #fff;
+    font: 38.5px/39.2px gotham-medium,arial,sans-serif;
+    text-shadow: 0 0 4px #333;
+    margin-bottom: 14px;
 }

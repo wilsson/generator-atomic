@@ -4,6 +4,7 @@ div{
 .box_projects{
     background: url(http://cdn.urbania.pe/static/online/img/bg_projects.jpg?v=2016215) no-repeat center center;
     background-size: cover;
+    padding: 24px 0;
 }
 .grid{
     lost-utility: clearfix;
@@ -52,6 +53,7 @@ div{
 	bottom: 0;
     font-size: 18px;
     right: 0;
+    margin-right: -1px;
 }
 .project-file-price .project-file-price-money{
     padding: 0 14px 0 3px;
@@ -64,25 +66,27 @@ div{
 .project-file-price-money::before {
     position: absolute;
     content: "";
-    border-top: 29px solid transparent;
+    border-top: 32px solid transparent;
     border-right: 20px solid rgba(237, 99, 24, 0.82);
-    border-bottom: 19px solid transparent;
+    border-bottom: 22px solid transparent;
     left: -20px;
     top: 0;
     bottom: 0;
 }
-.proyect-file-price-logo{
-    background: rgba(255, 255, 255, 0.7);
-    padding: 0 30px;
-}
 .title-project{
     text-align: left;
 }
-.title-project .title{
-    margin: 5px 0;
+.title-project-title{
+    margin: 14px 0 5px;
+    line-height: 14px;
 }
 .title-project-subtitle{
     color: #000;
-    text-transform: uppercase;
-    font-size: 15px;
+    font-size: 15.4px;
+    height: 39px;
+    line-height: 19.6px;
+    overflow: hidden;
+}
+.title-project-subtitle:hover{
+    color: #8ea83c;
 }
