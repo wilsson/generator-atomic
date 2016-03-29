@@ -1,8 +1,8 @@
 @import "_variables.css";
+@import "_main_sprite.css";
 @import "atoms/**/*.css";
 @import "molecules/**/*.css";
 @import "organisms/**/*.css";
-@import "_main_sprite.css";
 
 *{
 	margin:0;
@@ -39,11 +39,9 @@ ul{
 .bg-green{
 	background: #5d7612;
 }
-
 .test{
 	@include sprite($ovalado);
 }
-
 .payment.pe{
 	@include sprite($ico-cardpe);
 }

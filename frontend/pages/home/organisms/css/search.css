@@ -1,78 +1,86 @@
+.o-search{
+  top: -4px;
+}
 .m-search{
-    width: 96%;
-    background: rgba(0, 0, 0, 0.27);
-    text-align: center;
-    padding: 24px 12px;
-    overflow: hidden;
-    border-radius: 6px;
-    margin: 0 auto;
+  width: 96%;
+  background: rgba(0, 0, 0, 0.27);
+  text-align: center;
+  padding: 20px 12px;
+  overflow: hidden;
+  border-radius: 6px;
+  margin: 0 auto;
 }
 .a-search-type{
-	border-radius: 6px 0 0 6px;
-    cursor: pointer;
-    font-size: 16.8px;
-    height: 52px;
-    line-height: 52px;
-    padding: 0 12.6px;
-    width: 192.5px;
-    color: white; 
-    border: none;
+  border-radius: 6px 0 0 6px;
+  cursor: pointer;
+  font-size: 16.8px;
+  height: 52px;
+  line-height: 52px;
+  padding: 0 12.6px;
+  width: 192.5px;
+  color: white; 
+  border: none;
 }
 .a-search-type option{
-    background: #fff;
-    color: #000;
+  background: #fff;
+  color: #000;
 }
 .search-categorie{
-    color: black;
-    width: 229.6px;
-    background: white;
-    border-radius: 0;
+  color: black;
+  width: 229.6px;
+  background: white;
+  border-radius: 0;
 }
 .a-search-input{
-	border: 1px solid #fff;
-    border-radius: 0 6px 6px 0;
-    font-size: 16px;
-    height: 52px;
-    line-height: 17px;
-    padding: 0 14px;
-    width: 475px;
+  border: 1px solid #fff;
+  border-radius: 0 6px 6px 0;
+  font-size: 16px;
+  height: 52px;
+  line-height: 17px;
+  padding: 0 14px;
+  width: 475px;
 }
 .btn{
-    border: none;
-    border-radius: 5px;
-    color: #fff;
-    cursor: pointer;
-    font: 18.2px/19.6px gotham,arial,sans-serif;
-    padding: 15px 30px;
-    transition: color,background .3s ease-in;
-    -webkit-transition: color,background .3s ease-in;
-    -moz-transition: color,background .3s ease-in;
-    -ms-transition: color,background .3s ease-in;
-    -o-transition: color,background .3s ease-in;
-    outline: 0;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font: 18.2px/19.6px gotham,arial,sans-serif;
+  padding: 15px 30px;
+  transition: color,background .3s ease-in;
+  -webkit-transition: color,background .3s ease-in;
+  -moz-transition: color,background .3s ease-in;
+  -ms-transition: color,background .3s ease-in;
+  -o-transition: color,background .3s ease-in;
+  outline: 0;
 }
 .btn-search{
-	float: right;
-    margin-top: 13px;
-    font-size: 20px;
-    font-weight: 600;
+  font: 23px/26px gotham-medium,arial,sans-serif;
+  float: right;
+  margin-top: 13px;
+  font-size: 20px;
+  padding: 3px 33px 11px 22px;
 }
-.links_search{
-    float: left;
-    margin-top: 35px;
-    margin-left: 10px;
+.search-links{
+  float: left;
+  margin-top: 35px;
+  margin-left: 10px;
 }
-.a-links-search{
-    margin-right: 10px;
-    color: #fff;
-    font-size: 13px;
-    margin: 0 10px;
-    transition: all .2s ease-in;
-    -webkit-transition: all .2s ease-in;
-    -moz-transition: all .2s ease-in;
-    -ms-transition: all .2s ease-in;
-    -o-transition: all .2s ease-in;
+.a-search-links{
+  margin-right: 10px;
+  color: #fff;
+  font-size: 13px;
+  margin: 0 10px;
+  transition: all .2s ease-in;
+  -webkit-transition: all .2s ease-in;
+  -moz-transition: all .2s ease-in;
+  -ms-transition: all .2s ease-in;
+  -o-transition: all .2s ease-in;
 }
 .ico.search{
-   @include sprite($ico-search); 
+  @include sprite($ico-search); 
+  position: relative;
+  display: inline-block;
+  left: 15px;
+  bottom: -7px;
 }

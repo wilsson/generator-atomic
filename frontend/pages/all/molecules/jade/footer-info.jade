@@ -4,27 +4,47 @@ div.container-info-left
 		div.u-grid-col
 			p.u-grid-title Acerca de Urbania
 			ul
-				each item in ['Quiénes somos', 'Mapa de sitios', 'Vender', 'Alquilar', 'Proyectos', 'Inmobiliarias & Constructores', 'Agentes', 'Calculadora Hipotecaria', 'Curso Agente inmobiliario', 'Oportunidad de negocio']
-					li: a.a-grid-item(href="")= item
+				each item in ['Quiénes somos', 'Mapa de Sitio', 'Vender', 'Alquilar', 'Proyectos', 'Inmobiliarias & Constructores', 'Agentes', 'Calculadora Hipotecaria', 'Curso Agente inmobiliario', 'Oportunidad de negocio']
+					li.footer-info-list: a.a-grid-item(href="")= item
 		div.u-grid-col
 			p.u-grid-title Distritos más buscados
 			ul
 				each item in ['Miraflores', 'Santiago De Surco', 'San Isidro', 'La Molina', 'San Borja', 'Magdalena Del Mar', 'Pueblo Libre', 'Ver todos los distritos']
-					li: a.a-grid-item(href="")= item
+					li.footer-info-list: a.a-grid-item(href="")= item
 		div.u-grid-col
 			p.u-grid-title Proyectos más vistos
 			ul
-				each item in ['Escala', 'Los Miradores Del Cielo', 'Empresa Inmobiliaria', 'Condominio', 'Parkoffice', 'Departamento En Campo', 'Benevento']
+				each item in ['Edificio Residencial "otsu"']
 					li: a.a-grid-item(href="")= item
 			p.u-grid-title Otros
 				ul
-					li
-						a(href="" class="a-grid-item") Blog
-					li
-						a(href="" class="a-grid-item") App mobile
+					each item in ['Blog', 'App mobile']
+						li.footer-info-list: a.a-grid-item(href="")= item
 div.container-info-rigth.social_networks
 	p.follow Síguenos en:
-	a.gp(href="")
-	a.pt(href="")
-	a.tw(href="")
-	a.fb(href="")
+	a.social_networks-redes.gp(href="")
+	a.social_networks-redes.pt(href="")
+	a.social_networks-redes.tw(href="")
+	a.social_networks-redes.fb(href="")
+	div.web-central
+		div
+			p.web-central-tlf FONOVENTAS 
+				br
+				span.web-central-tl-option (01) 311-6707 - opción 1
+			span.ico-ventas
+		p.web-central-horario
+			|Lunes a Viernes de 9 am a 7 pm
+			br
+			|Sábado de 9 am a 1 pm
+		p.web-central-help Estamos para ayudarte
+			span.help
+		ul.web-central-help-guide
+			li 
+				a(href="") Preguntas Frecuentes
+					span.help3
+			li Contáctanos vía mail
+				a(href="")
+					span.help6
+		div.web-central-app
+			a.google-play
+			a.app-store

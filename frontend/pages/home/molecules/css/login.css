@@ -1,20 +1,35 @@
-.header-login{
+/*.register{
+	text-align: right;
+	padding: 0 0 0 20px;
+}*/
+.m-credit-scotiabank{
+	margin-right: 7px;
+}
+.m-public-notice{
+	text-align: right;
+}
+.a-public-notice-nav-item-title,
+.a-credit-scotiabank-nav-item-title{
+	font-size: 12px;
+	line-height: 26px;
+}
+.a-credit-scotiabank-nav-item-title{
+	display: inline-block;
+	width: 140px;
+	text-align: left;
+	color: #fff;
+	font-size: 12px;
+	margin-top: -3px;
+}
+.a-public-notice-header-login{
 	display: flex;
 }
-.nav-item-title{
-    font-size: 12px;
-    line-height: 25px;
-}
-.item_register{
+.q-public-notice-item_register{
 	margin: 0 2px;
 	line-height: 30px;
 	padding: 0 10px;
 	border-radius: 6px;
 }
-.register{
-	text-align: right;
-	padding: 0 0 0 20px;
-}
-.a-public-notice{
-	text-align: right;
+.logo-urbania{
+	@include sprite($icono);
 }
