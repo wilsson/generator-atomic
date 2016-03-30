@@ -22,5 +22,6 @@ module.exports = processor = [
   /* - - - - */
   //require('cssnano'),
   require('autoprefixer'),
-  require('postcss-media-minmax')
+  require('postcss-media-minmax'),
+  require('css-mqpacker')
 ];

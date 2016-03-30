@@ -27,3 +27,14 @@
 .flex{
 	display: flex;
 }
+
+@media only screen and (max-width: 400px) {
+  .box2 {
+    background-color: #f00;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .box {
+    background-color: #d2691e;
+  }
+}
