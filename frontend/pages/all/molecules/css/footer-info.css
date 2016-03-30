@@ -1,7 +1,7 @@
 .container-info-left{
 	width: 74%;
 	text-align: left;
-    margin-bottom: 14px;
+	margin-bottom: 5px;
 }
 .container-info-rigth{
 	width: 26%;
@@ -12,6 +12,7 @@
 	margin: 14px 0;
 	text-shadow: 0 1px 2px #333;
 	text-align: right;
+	margin-right: 9px;
 }
 .social_networks{
 	text-align: right;
@@ -34,6 +35,7 @@
 }
 .fb{
 	@include sprite($ico-facebook);
+	margin-right: 9px;
 }
 .pt{
 	@include sprite($ico-pinterest);	
@@ -43,27 +45,37 @@
 	float: right;
 }
 .web-central{
-    margin-top: 30px;
-    text-align: left;
-    padding-left: 22px;
+	margin-top: 30px;
+	text-align: left;
+	padding-left: 22px;
+	padding-right: 9px;
+}
+.web-central::before {
+	content: "";
+	position: absolute;
+	background: #5e7221;
+	height: 93%;
+	width: 1px;
+	left: 1px;
+	top: -58px;
 }
 .web-central-tlf{
-    width: 85%;
-    display: inline-block;
-    text-shadow: 0 1px 2px #333;
-    margin: 0;
-    line-height: 1.5;
+	width: 85%;
+	display: inline-block;
+	text-shadow: 0 1px 2px #333;
+	margin: 0;
+	line-height: 24px;
 }
 .web-central-tl-option{
 	font-size: 15px;
 }
 .web-central-horario{
-    padding-top: 5px;
-    font-size: 13px;
-    line-height: 22px;
-    border-bottom: 1px solid #fff;
-    padding-bottom: 19px;
-    margin-bottom: 26px;
+	padding-top: 5px;
+	font-size: 13px;
+	line-height: 22px;
+	border-bottom: 1px solid #fff;
+	padding-bottom: 16px;
+	margin-bottom: 26px;
 }
 .web-central-help{
 	font-size: 16.13px!important;
@@ -72,17 +84,27 @@
 .footer-info-list{
 	margin-top: 2px;
 }
+.web-central-help-guide{
+	margin-top: 21px;
+}
+.web-central-help-guide li{
+	font-size: 13px;
+	line-height: 31px;
+}
+.web-central-help-guide-a{
+	width: 100%;
+}
 .help{
 	@include sprite($ico-help2);
-    float: right;
+	float: right;
 	position: relative;
 	top: -5px;
 }
 .web-central-app{
 	overflow: hidden;
-    margin: 0;
-    width: 100%;
-	margin-top: 35px;
+	margin: 0;
+	width: 237px;
+	margin-top: 30px;
 	margin-left: -13px;
 }
 .google-play{
@@ -98,19 +120,13 @@
 .help3{
 	@include sprite($ico-help3);
 	display: inline-block;
-    position: absolute;
-    right: 0;
+	float: right;
+	margin-top: 3px;
 }
 .help6{
 	@include sprite($ico-help6);
 	display: inline-block;
-    position: absolute;
-    right: 0;
-}
-.web-central-help-guide{
-	margin-top: 21px;
-}
-.web-central-help-guide li{
-	font-size: 13px;
-	line-height: 25px;
+	float: right;
+	margin-right: 3px;
+	margin-top: 3px;
 }

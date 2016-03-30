@@ -37,7 +37,7 @@ header .a-header.logo{
 	margin-left: 18px;
 }
 .u-content{
-	width:980px;
+	max-width:980px;
 	height: auto;
 	padding:20px 0;
 	margin:auto;

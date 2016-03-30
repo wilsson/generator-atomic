@@ -1,13 +1,15 @@
-.copyright{
+.m-copyright{
 	background:#4d5f1a;
 	font-size: 10.4;
 }
 .libro-reclamaciones{
 	@include sprite($ico-libroreclamos);
-    display: inline-block;
-    margin-right: 10px;
+	display: inline-block;
+	margin-right: 10px;
 }
 .copyright-content-p{
+	position: relative;
+	top: -1px;
 	display: flex;
 	-webkit-flex-flow: row wrap;
 	-ms-flex-flow: row wrap;
@@ -20,6 +22,11 @@
 	-webkit-align-items: center;
 	-ms-flex-align: center;
 	align-items: center;
+	margin: 0 8.4px;
+
+}
+.copyright-content-link{
+	margin-bottom: 2px;
 }
 .copyright-nav-item{
 	padding: 0 10px;

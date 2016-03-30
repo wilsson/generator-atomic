@@ -1,25 +1,29 @@
-.footer-link{
+.m-footer-link{
 	padding: 14px 0 !important;
+	max-width: 980px;
+	margin: auto;
+	overflow: hidden;
 }
-.footer-link-list{
+.a-footer-link-p{
+	width: 9%;
+	font-size: 10.5px;
+	float: left;
+}
+.a-footer-link-list{
 	font-size: 10.4px;
 	list-style: none;
 	margin: 0;
 	text-align: center;
 	width: 91%;
-	margin-right: 6px;
+	float: right;
 }
-.footer-link-p{
-	width: 9%;
-	font-size: 10.5px;
-}
-.footer-link-nav-item{
+.q-footer-link-nav-item{
 	display: inline-block;
 	padding: 0 1.5px;
 	margin-bottom: 6px;
 	font-size: 10.5px;
 }
-.footer-link-separator::after{
+.q-footer-link-separator::after{
 	content: "|";
 	color: #fff;
 	margin-right: 4px;

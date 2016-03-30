@@ -4,8 +4,8 @@
 .m-search{
   width: 96%;
   background: rgba(0, 0, 0, 0.27);
-  text-align: center;
-  padding: 20px 12px;
+  text-align: left;
+  padding: 2%;
   overflow: hidden;
   border-radius: 6px;
   margin: 0 auto;
@@ -32,13 +32,15 @@
   border-radius: 0;
 }
 .a-search-input{
+  color: #939393;
+  font-family: gotham-medium,arial,sans-serif;
   border: 1px solid #fff;
   border-radius: 0 6px 6px 0;
   font-size: 16px;
   height: 52px;
   line-height: 17px;
   padding: 0 14px;
-  width: 475px;
+  width: 468px;
 }
 .btn{
   border: none;
@@ -46,7 +48,7 @@
   color: #fff;
   cursor: pointer;
   font: 18.2px/19.6px gotham,arial,sans-serif;
-  padding: 15px 30px;
+  padding: 9px 30px 7px;
   transition: color,background .3s ease-in;
   -webkit-transition: color,background .3s ease-in;
   -moz-transition: color,background .3s ease-in;
@@ -57,7 +59,7 @@
 .btn-search{
   font: 23px/26px gotham-medium,arial,sans-serif;
   float: right;
-  margin-top: 13px;
+  margin-top: 11px;
   font-size: 20px;
   padding: 3px 33px 11px 22px;
 }

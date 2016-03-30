@@ -1,19 +1,19 @@
 div.container-info-left
 	p.logo_footer(src="")
 	section.u-grid
-		div.u-grid-col
+		div.u-grid-col3
 			p.u-grid-title Acerca de Urbania
 			ul
 				each item in ['Quiénes somos', 'Mapa de Sitio', 'Vender', 'Alquilar', 'Proyectos', 'Inmobiliarias & Constructores', 'Agentes', 'Calculadora Hipotecaria', 'Curso Agente inmobiliario', 'Oportunidad de negocio']
 					li.footer-info-list: a.a-grid-item(href="")= item
-		div.u-grid-col
+		div.u-grid-col3
 			p.u-grid-title Distritos más buscados
 			ul
 				each item in ['Miraflores', 'Santiago De Surco', 'San Isidro', 'La Molina', 'San Borja', 'Magdalena Del Mar', 'Pueblo Libre', 'Ver todos los distritos']
 					li.footer-info-list: a.a-grid-item(href="")= item
-		div.u-grid-col
+		div.u-grid-col3
 			p.u-grid-title Proyectos más vistos
-			ul
+			//ul
 				each item in ['Edificio Residencial "otsu"']
 					li: a.a-grid-item(href="")= item
 			p.u-grid-title Otros
@@ -40,10 +40,10 @@ div.container-info-rigth.social_networks
 			span.help
 		ul.web-central-help-guide
 			li 
-				a(href="") Preguntas Frecuentes
+				a(href="" class="web-central-help-guide-a") Preguntas Frecuentes
 					span.help3
-			li Contáctanos vía mail
-				a(href="")
+			li 
+				a(href="" class="web-central-help-guide-a") Contáctanos vía mail
 					span.help6
 		div.web-central-app
 			a.google-play

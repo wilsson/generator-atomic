@@ -10,12 +10,12 @@ module.exports = function Task(gulp,path,plugins,config){
       .pipe(gulp.dest(path.dest.staticFiles+'/fonts'));
   });
 
-  gulp.task('copy:img:sprites',function(){
-    return gulp.src(path.frontend.images +  '/*_sprite.png')
+  gulp.task('copy:img',function(){
+    return gulp.src(path.frontend.images +  '/*.*')
       .pipe(gulp.dest(path.dest.staticFiles+'/images'));
   });
 
   gulp.task('copy', function(cb){
-    plugins.runSequence('copy:fonts','copy:img:sprites', cb)
+    plugins.runSequence('copy:fonts','copy:img', cb)
   });
 };
